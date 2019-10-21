@@ -18,7 +18,8 @@ case $1 in
 
     if [ "$TEST_TOOL" = "rubygems" ]
     then
-      exec rake setup
+      gem install bundler -v "~>2.0"
+      exec bundle install
     else
       cd bundler
 

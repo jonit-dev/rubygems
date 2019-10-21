@@ -30,7 +30,7 @@ here: http://guides.rubygems.org/contributing/
 
 ## Getting Started
 
-    $ rake setup
+    $ bundle install
     $ rake test
 
 > Optional you can configure git hooks with: rake git_hooks
