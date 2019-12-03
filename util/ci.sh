@@ -18,7 +18,7 @@ case $1 in
 
     if [ "$TEST_TOOL" = "rubygems" ]
     then
-      gem install bundler -v "~>2.0"
+      gem install bundler:2.0.2
       exec bundle install
     else
       cd bundler
