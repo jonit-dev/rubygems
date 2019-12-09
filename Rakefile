@@ -400,11 +400,6 @@ task :check_manifest do
 end
 
 namespace :bundler do
-  desc "Initialize bundler submodule"
-  task :checkout do
-    sh "git submodule update --init"
-  end
-
   task :build_metadata do
     chdir('bundler') { sh "rake build_metadata" }
   end
